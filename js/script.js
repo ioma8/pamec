@@ -10,9 +10,11 @@ function addTodo() {
 
 function proccessTodo(thisElem) {
 	var todoText=thisElem.innerText;
-	todoItems[todoText]=1;
-	console.log(todoItems[todoText]);
-	redrawTodos();
+	if (confirm('Splněno? '+todoText))
+	{
+		todoItems[todoText]=1;
+		redrawTodos();
+	}
 }
 
 function redrawTodos() {
