@@ -1,7 +1,33 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background-color: #a0a0a0;
 	color: #000000;
 	font-family: sans-serif;
+}
+
+#todoForm {
+	position: relative;
+}
+
+#todoForm #newTodoInput {
+	width: 80%;
+	height: 24px;
+	line-height: 1;
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#todoForm #newTodoButton {
+	width: 20%;
+	height: 24px;
+	line-height: 24px;
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: top;
 }
 
 #todosArea {
