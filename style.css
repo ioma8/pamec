@@ -1,0 +1,20 @@
+body {
+	background-color: #a0a0a0;
+	color: #000000;
+	font-family: sans-serif;
+}
+
+#todosArea {
+	margin-top: 6px;
+	border-top: 2px solid #bbbbbb;
+	padding-top: 12px;
+}
+
+#todosArea .singleTodoItem {
+	font-size: 16px;
+	height: 24px;
+	line-height: 24px;
+	background-color: #c0c0c0;
+	padding: 0 8px;
+	margin-bottom: 12px;
+}
