@@ -14,18 +14,18 @@ body {
 
 #todoForm #newTodoInput {
 	width: 80%;
-	height: 24px;
+	height: 40px;
 	line-height: 1;
-	font-size: 16px;
+	font-size: 20px;
 	display: inline-block;
 	vertical-align: top;
 }
 
 #todoForm #newTodoButton {
 	width: 20%;
-	height: 24px;
-	line-height: 24px;
-	font-size: 16px;
+	height: 40px;
+	line-height: 1;
+	font-size: 20px;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -37,10 +37,10 @@ body {
 }
 
 #todosArea .singleTodoItem {
-	font-size: 16px;
-	height: 24px;
-	line-height: 24px;
-	background-color: #c0c0c0;
+	font-size: 20px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #dddddd;
 	padding: 0 8px;
 	margin-bottom: 12px;
 }

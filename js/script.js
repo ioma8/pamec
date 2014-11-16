@@ -1,4 +1,5 @@
 var todoItems={};
+
 function addTodo() {
 	var todoText=document.getElementById('newTodoInput').value;
 	if (todoText=='') return;	
@@ -10,6 +11,7 @@ function addTodo() {
 function proccessTodo(thisElem) {
 	var todoText=thisElem.innerText;
 	todoItems[todoText]=1;
+	console.log(todoItems[todoText]);
 	redrawTodos();
 }
 
@@ -21,9 +23,13 @@ function redrawTodos() {
 		newElementHtml+='<div class="singleTodoItem" onClick="proccessTodo(this);">'+todoText+'</div>';
 	}
 	myElement.innerHTML=newElementHtml;
-	console.log(todoItems);
+
+	localStorage.savedTodoItems=JSON.stringify(todoItems);
 }
 
-window.onload = function() { 
-  
+window.onload = function() {
+	if (localStorage.savedTodoItems!=undefined) {
+		todoItems=JSON.parse(localStorage.savedTodoItems);
+		redrawTodos();
+	}  
 }
