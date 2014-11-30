@@ -22,7 +22,7 @@ function redrawTodos() {
 	var newElementHtml='';
 	for (todoText in todoItems) {
 		if (todoItems[todoText]!=0) continue;
-		newElementHtml+='<div class="singleTodoItem" onMouseDown="proccessTodo(this);">'+todoText+'</div>';
+		newElementHtml='<div class="singleTodoItem" onMouseDown="proccessTodo(this);">'+todoText+'</div>'+newElementHtml;
 	}
 	myElement.innerHTML=newElementHtml;
 

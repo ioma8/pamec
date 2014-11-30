@@ -9,8 +9,12 @@ body {
 }
 
 #todoForm {
-	position: relative;
-}
+	position: fixed;
+	top: 0;
+	left: 8px;
+	padding: 8px 0;
+	background-color: #a0a0a0;
+	}
 
 #todoForm #newTodoInput {
 	width: 80%;
@@ -19,6 +23,7 @@ body {
 	font-size: 20px;
 	display: inline-block;
 	vertical-align: top;
+	border: 0;
 }
 
 #todoForm #newTodoButton {
@@ -28,19 +33,20 @@ body {
 	font-size: 20px;
 	display: inline-block;
 	vertical-align: top;
+	border: 0;
 }
 
 #todosArea {
-	margin-top: 6px;
+	margin-top: 56px;
 	border-top: 2px solid #bbbbbb;
-	padding-top: 12px;
+	padding-top: 8px;
 }
 
 #todosArea .singleTodoItem {
 	font-size: 20px;
-	height: 40px;
-	line-height: 40px;
+	height: auto;
+	line-height: 22px;
 	background-color: #dddddd;
-	padding: 0 8px;
+	padding: 6px 8px;
 	margin-bottom: 12px;
 }
